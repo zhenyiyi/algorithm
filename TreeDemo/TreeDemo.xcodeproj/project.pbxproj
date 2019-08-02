@@ -16,6 +16,9 @@
 		5118811A22DC195D00016BBE /* Lowest Common Ancestor of a Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5118811822DC195D00016BBE /* Lowest Common Ancestor of a Binary Search Tree.cpp */; };
 		5118811D22DC263300016BBE /* Lowest Common Ancestor of a Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5118811B22DC263300016BBE /* Lowest Common Ancestor of a Binary Tree.cpp */; };
 		5118812122DC572A00016BBE /* Order Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5118811F22DC572A00016BBE /* Order Binary Tree.cpp */; };
+		BD494F1122F45B8D004F7AA8 /* Balanced Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F0B22F45B8C004F7AA8 /* Balanced Binary Tree.cpp */; };
+		BD494F1222F45B8D004F7AA8 /* Minimum Depth of Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F0D22F45B8C004F7AA8 /* Minimum Depth of Binary Tree.cpp */; };
+		BD494F1322F45B8D004F7AA8 /* Path Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F0F22F45B8C004F7AA8 /* Path Sum.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +54,12 @@
 		5118811C22DC263300016BBE /* Lowest Common Ancestor of a Binary Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Lowest Common Ancestor of a Binary Tree.hpp"; sourceTree = "<group>"; };
 		5118811F22DC572A00016BBE /* Order Binary Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Order Binary Tree.cpp"; sourceTree = "<group>"; };
 		5118812022DC572A00016BBE /* Order Binary Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Order Binary Tree.hpp"; sourceTree = "<group>"; };
+		BD494F0B22F45B8C004F7AA8 /* Balanced Binary Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Balanced Binary Tree.cpp"; sourceTree = "<group>"; };
+		BD494F0C22F45B8C004F7AA8 /* Minimum Depth of Binary Tree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "Minimum Depth of Binary Tree.hpp"; sourceTree = "<group>"; };
+		BD494F0D22F45B8C004F7AA8 /* Minimum Depth of Binary Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Minimum Depth of Binary Tree.cpp"; sourceTree = "<group>"; };
+		BD494F0E22F45B8C004F7AA8 /* Path Sum.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "Path Sum.hpp"; sourceTree = "<group>"; };
+		BD494F0F22F45B8C004F7AA8 /* Path Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Path Sum.cpp"; sourceTree = "<group>"; };
+		BD494F1022F45B8D004F7AA8 /* Balanced Binary Tree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "Balanced Binary Tree.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,12 @@
 				510F692522F2E2D600060CD9 /* Symmetric Tree.hpp */,
 				510F692722F2F13500060CD9 /* Maximum Depth of Binary Tree.cpp */,
 				510F692822F2F13500060CD9 /* Maximum Depth of Binary Tree.hpp */,
+				BD494F0B22F45B8C004F7AA8 /* Balanced Binary Tree.cpp */,
+				BD494F1022F45B8D004F7AA8 /* Balanced Binary Tree.hpp */,
+				BD494F0D22F45B8C004F7AA8 /* Minimum Depth of Binary Tree.cpp */,
+				BD494F0C22F45B8C004F7AA8 /* Minimum Depth of Binary Tree.hpp */,
+				BD494F0F22F45B8C004F7AA8 /* Path Sum.cpp */,
+				BD494F0E22F45B8C004F7AA8 /* Path Sum.hpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -172,10 +187,13 @@
 			files = (
 				510F692622F2E2D600060CD9 /* Symmetric Tree.cpp in Sources */,
 				510F692922F2F13500060CD9 /* Maximum Depth of Binary Tree.cpp in Sources */,
+				BD494F1222F45B8D004F7AA8 /* Minimum Depth of Binary Tree.cpp in Sources */,
 				5118810422D866CA00016BBE /* main.cpp in Sources */,
 				510F692322F2CB7100060CD9 /* Same Tree.cpp in Sources */,
 				5118811D22DC263300016BBE /* Lowest Common Ancestor of a Binary Tree.cpp in Sources */,
 				510F68F122F1975E00060CD9 /* BinarySearchTree.cpp in Sources */,
+				BD494F1322F45B8D004F7AA8 /* Path Sum.cpp in Sources */,
+				BD494F1122F45B8D004F7AA8 /* Balanced Binary Tree.cpp in Sources */,
 				5118811A22DC195D00016BBE /* Lowest Common Ancestor of a Binary Search Tree.cpp in Sources */,
 				5118811622D899E500016BBE /* Validate Binary Search Tree.cpp in Sources */,
 				5118812122DC572A00016BBE /* Order Binary Tree.cpp in Sources */,
