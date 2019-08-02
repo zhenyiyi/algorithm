@@ -6,7 +6,7 @@
 //  Copyright © 2019 quanshi. All rights reserved.
 //
 
-#include "Maximum Depth of Binary Tree.hpp"
+#include "Maximum Depth of Binary Tree 2.hpp"
 
 void testMaximumDepthOfBinaryTree(){
     TreeNode *root = new TreeNode(3);

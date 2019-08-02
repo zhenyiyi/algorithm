@@ -13,6 +13,8 @@
 #include "Order Binary Tree.hpp"
 #include "Code/Same Tree.hpp"
 #include "Code/Symmetric Tree.hpp"
+#include "Code/Minimum Depth of Binary Tree.hpp"
+
 
 int main(int argc, const char * argv[]) {
     
@@ -26,7 +28,9 @@ int main(int argc, const char * argv[]) {
     
 //    testSameTree();
     
-    testSymmetricTree();
+//    testSymmetricTree();
+    
+    testMinDepth();
     
     return 0;
 }

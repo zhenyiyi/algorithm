@@ -13,5 +13,5 @@ void testMinDepth(){
     root->left = new TreeNode(2);
     
     int ret = Solution_111().minDepth(root);
-    printf("ret == %d",ret);
+    printf("ret == %d\n",ret);
 }

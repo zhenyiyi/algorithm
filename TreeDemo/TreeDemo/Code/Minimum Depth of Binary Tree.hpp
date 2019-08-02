@@ -34,21 +34,46 @@
  */
 
 #include "TreeNode.hpp"
+#include <cmath>
+#include <cstdlib>
 
 class Solution_111 {
 public:
     int minDepth(TreeNode* root) {
+        // 如果当前树是空的，那么返回0
         if (root == nullptr) {
             return 0;
         }
-        return false;
+        // 到达 叶子节点
+        if (root->left ==nullptr && root->right == nullptr) {
+            return 1;
+        }
+        int min_depth = INT32_MAX;
+        // 如果有左子树，得到左子树的最小值
+        if (root->left) {
+            min_depth = fmin(min_depth, minDepth(root->left));
+        }
+        // 和右子树比较，得到右子树的最小值
+        if (root->right) {
+            min_depth = fmin(min_depth, minDepth(root->right));
+        }
+        // 加上当前节点的高度
+        return min_depth + 1;
     }
-private:
-    int min_left;
-    int min_right;
     
 };
 
+/*
+ 时间复杂度：我们访问每个节点一次，时间复杂度为 O(N)O(N) ，其中 NN 是节点个数。
+ 空间复杂度：最坏情况下，整棵树是非平衡的，例如每个节点都只有一个孩子，递归会调用 NN （树的高度）次，因此栈的空间开销是 O(N)O(N) 。
+ 
+ 但在最好情况下，树是完全平衡的，高度只有 \log(N)log(N)，因此在这种情况下空间复杂度只有 O(\log(N))O(log(N))
+ 
+ 作者：LeetCode
+ 链接：https://leetcode-cn.com/problems/two-sum/solution/er-cha-shu-de-zui-xiao-shen-du-by-leetcode/
+ 来源：力扣（LeetCode）
+ 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ */
 void testMinDepth();
 
 #endif /* Minimum_Depth_of_Binary_Tree_hpp */

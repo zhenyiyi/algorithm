@@ -67,7 +67,7 @@ public:
             return false;
         }
         sum -= root->val;
-        // 相当于到 叶子节点
+        // 相当于找到 叶子节点
         if (root->left==nullptr && root->right==nullptr) {
             return sum == 0;
         }
