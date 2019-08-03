@@ -63,6 +63,7 @@ public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         int pVal = p->val;
         int qVal = q->val;
+        // 如果当前节点大于p 且大于q, 那么在左子树继续查找
         if (root->val > pVal && root->val > qVal) {
             return lowestCommonAncestor(root->left, p, q);
         }else if (root->val < pVal && root->val < qVal) {

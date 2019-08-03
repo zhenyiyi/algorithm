@@ -48,14 +48,17 @@
 class Solution_236 {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        // 1. 终止条件 ，找到P 或者 Q
         if (root == nullptr || root == p || root == q) {
             return root;
         }
         TreeNode *leftNode = lowestCommonAncestor(root->left, p, q);
         TreeNode *rightNode = lowestCommonAncestor(root->right, p, q);
+        // 2. 如果左右子树都不为空，那么当前节点就是最近的祖先节点
         if (leftNode != nullptr && rightNode != nullptr) {
             return root;
         }
+        // 3. 如果都在左子树，那么继续查找。同理
         return leftNode != nullptr ? leftNode : rightNode;
     }
 };

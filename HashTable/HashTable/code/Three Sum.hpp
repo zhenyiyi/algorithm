@@ -37,6 +37,7 @@ using namespace std;
 class Solution_12 {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
+        // 首先排序
         sort(nums.begin(), nums.end());
         vector<vector<int>> res;
         unordered_map<int, vector<int>> dict;

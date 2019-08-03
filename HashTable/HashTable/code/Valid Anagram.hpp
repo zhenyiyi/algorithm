@@ -47,6 +47,7 @@ public:
         for (auto ch : s) {
             dict1[ch] += 1;
         }
+        // test Code
         map<char, int>::iterator iter = dict1.find('H');
         if (iter != dict1.end()) {
             printf("iter.second == %d\n",iter->second);

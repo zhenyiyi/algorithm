@@ -76,6 +76,7 @@ class Solution_98_2 {
 public:
     // 1. 因为二叉搜索树中序遍历是递增的,所以我们可以中序遍历判断前一数是否小于后一个数
     bool isValidBST(TreeNode* root) {
+        //默认前置节点是空
         this->pre = nullptr;
         return isBST(root);
     }
@@ -93,7 +94,7 @@ public:
     }
     
 private:
-    TreeNode *pre;
+    TreeNode *pre; /*前置节点*/
 };
 
 class Solution_98_3 {

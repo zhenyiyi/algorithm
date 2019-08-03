@@ -15,9 +15,9 @@
 template <typename Key, typename T, typename Hash = std::hash<Key>>
 class hash_map {
   public:
-    using key_type = Key;
-    using mapped_type = T;
-    using value_type = std::pair<const key_type, mapped_type>;
+    using key_type = Key;  // KeyType
+    using mapped_type = T; // MappedType
+    using value_type = std::pair<const key_type, mapped_type>; // 键值对
     using size_type = size_t;
     using hasher = std::hash<Key>;
 
