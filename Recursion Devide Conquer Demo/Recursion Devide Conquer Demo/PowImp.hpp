@@ -38,6 +38,7 @@
 
 class Solution_50 {
 public:
+//    X 的 N 次方
     double myPow(double x, int n) {
         long N = n;
         if (N < 0) {

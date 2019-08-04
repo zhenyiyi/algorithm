@@ -61,6 +61,23 @@ public:
         return min_depth + 1;
     }
     
+    int minDepthV2(TreeNode* root){
+        if (root == nullptr) {
+            return 0;
+        }
+        // 如果没有左子树，则取右子树中寻找
+        if (!root->left) {
+            return 1 + minDepth(root->right);
+        }
+        // 如果没有右子树，则从左子树中寻找
+        if (!root->right) {
+            return 1 + minDepth(root->left);
+        }
+        // Devide and Coquer
+        int minLeft = minDepth(root->left);
+        int minRight = minDepth(root->right);
+        return fminl(minLeft, minRight) + 1;
+    }
 };
 
 /*
