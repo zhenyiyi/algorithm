@@ -21,6 +21,7 @@
 		BD494F1622F45CA9004F7AA8 /* Maximum Depth of Binary Tree 2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F1422F45CA9004F7AA8 /* Maximum Depth of Binary Tree 2.cpp */; };
 		BD494F1922F4655D004F7AA8 /* Invert Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F1722F4655D004F7AA8 /* Invert Binary Tree.cpp */; };
 		BD494F1C22F58D32004F7AA8 /* Binary Tree Level Order Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F1A22F58D32004F7AA8 /* Binary Tree Level Order Traversal.cpp */; };
+		BD494F1F22F66A8A004F7AA8 /* Generate Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F1D22F66A8A004F7AA8 /* Generate Parentheses.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,8 @@
 		BD494F1822F4655D004F7AA8 /* Invert Binary Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Invert Binary Tree.hpp"; sourceTree = "<group>"; };
 		BD494F1A22F58D32004F7AA8 /* Binary Tree Level Order Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Binary Tree Level Order Traversal.cpp"; sourceTree = "<group>"; };
 		BD494F1B22F58D32004F7AA8 /* Binary Tree Level Order Traversal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Binary Tree Level Order Traversal.hpp"; sourceTree = "<group>"; };
+		BD494F1D22F66A8A004F7AA8 /* Generate Parentheses.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Generate Parentheses.cpp"; sourceTree = "<group>"; };
+		BD494F1E22F66A8A004F7AA8 /* Generate Parentheses.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Generate Parentheses.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				BD494F1822F4655D004F7AA8 /* Invert Binary Tree.hpp */,
 				BD494F1A22F58D32004F7AA8 /* Binary Tree Level Order Traversal.cpp */,
 				BD494F1B22F58D32004F7AA8 /* Binary Tree Level Order Traversal.hpp */,
+				BD494F1D22F66A8A004F7AA8 /* Generate Parentheses.cpp */,
+				BD494F1E22F66A8A004F7AA8 /* Generate Parentheses.hpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				BD494F1C22F58D32004F7AA8 /* Binary Tree Level Order Traversal.cpp in Sources */,
 				BD494F1922F4655D004F7AA8 /* Invert Binary Tree.cpp in Sources */,
 				BD494F1122F45B8D004F7AA8 /* Balanced Binary Tree.cpp in Sources */,
+				BD494F1F22F66A8A004F7AA8 /* Generate Parentheses.cpp in Sources */,
 				5118811A22DC195D00016BBE /* Lowest Common Ancestor of a Binary Search Tree.cpp in Sources */,
 				5118811622D899E500016BBE /* Validate Binary Search Tree.cpp in Sources */,
 				BD494F1622F45CA9004F7AA8 /* Maximum Depth of Binary Tree 2.cpp in Sources */,

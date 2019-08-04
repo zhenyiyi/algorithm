@@ -14,6 +14,7 @@
 #include "Code/Same Tree.hpp"
 #include "Code/Symmetric Tree.hpp"
 #include "Code/Minimum Depth of Binary Tree.hpp"
+#include "Code/Generate Parentheses.hpp"
 
 
 int main(int argc, const char * argv[]) {
@@ -30,7 +31,9 @@ int main(int argc, const char * argv[]) {
     
 //    testSymmetricTree();
     
-    testMinDepth();
+//    testMinDepth();
+    
+    testGenerateParenthesis();
     
     return 0;
 }
