@@ -33,8 +33,25 @@
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+/*
+ 
+ 
+ greater是升序排列，后面的大于前面的
+ 
+ less是降序排列，后面的小于前面的
+ 
+ 在初始化优先级队列时默认是less
+ 
+ priority_queue<int,vector<int>,less<int> > que与priority_queue<int > que是一样的效果
+ 
+ 
+ priority_queue使用详解
+ 
+ https://blog.csdn.net/jiayizhenzhenyijia/article/details/79908690
+ */
 #include <vector>
 #include <queue>
+#include <algorithm>
 
 using namespace std;
 class KthLargest {
@@ -59,11 +76,42 @@ public:
         return queue.top();
     }
 private:
-    priority_queue<int, vector<int>, greater<int> > queue; ///<
+    priority_queue<int, vector<int>, greater<int> > queue; ///< 用的是小顶堆
     int maxSize;
+    
 public:
-    void test();
+ 
  };
+
+class KthLargestV2 {
+    
+    
+public:
+    KthLargestV2(int k, vector<int> &nums){
+        maxSize = k;
+        _nums = nums;
+        // 建堆
+        make_heap(_nums.begin(), _nums.end(), greater<int>());
+    }
+    int add(int val){
+        // 添加元素
+        _nums.push_back(val);
+        // 堆化
+        push_heap(_nums.begin(), _nums.end(), greater<int>());
+        
+        // 删除堆顶元素 删除前 size -k 个元素，那个堆顶就是 第 k
+        while (_nums.size() > maxSize) {
+            pop_heap(_nums.begin(), _nums.end(), greater<int>());
+            _nums.pop_back();
+        }
+        return _nums[0];
+    }
+private:
+    int maxSize;
+    vector<int> _nums;
+};
+
+void test();
 
 /**
  * Your KthLargest object will be instantiated and called as such:

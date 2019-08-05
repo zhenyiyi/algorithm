@@ -9,7 +9,6 @@
 #include <iostream>
 #include "ValidParentheses.hpp"
 #include "MinStack.hpp"
-#include "Kth_Largest_Element_in_a_Stream.hpp"
 #include "Sliding_Window_Maximum.hpp"
 
 

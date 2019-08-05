@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include "code/Kth_Largest_Element_in_a_Stream.hpp"
+#include "TestHeap.hpp"
+#include "code/Last Stone Weight.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+//    testHeap();
+//    test();
+    testLastStoneWeight();
+    
     return 0;
 }

@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		512A5C8322D440C200830C16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C8222D440C200830C16 /* main.cpp */; };
-		512A5C8E22D449D000830C16 /* ValidParentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C8C22D449CF00830C16 /* ValidParentheses.cpp */; };
-		512A5C9122D44EE000830C16 /* MinStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C8F22D44EE000830C16 /* MinStack.cpp */; };
-		512A5C9522D494A200830C16 /* Implement_Queue_using_Stacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C9322D494A200830C16 /* Implement_Queue_using_Stacks.cpp */; };
-		512A5C9A22D572A800830C16 /* Implement_Stack_using_Queues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C9622D572A700830C16 /* Implement_Stack_using_Queues.cpp */; };
-		512A5C9E22D59EBE00830C16 /* Sliding_Window_Maximum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C9C22D59EBE00830C16 /* Sliding_Window_Maximum.cpp */; };
+		BD494F2D22F67B5C004F7AA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F2C22F67B5C004F7AA8 /* main.cpp */; };
+		BD494F3522F67BAC004F7AA8 /* N-Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F3322F67BAC004F7AA8 /* N-Queens.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		512A5C7D22D440C200830C16 /* CopyFiles */ = {
+		BD494F2722F67B5C004F7AA8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -28,22 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		512A5C7F22D440C200830C16 /* StackDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StackDemo; sourceTree = BUILT_PRODUCTS_DIR; };
-		512A5C8222D440C200830C16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		512A5C8C22D449CF00830C16 /* ValidParentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValidParentheses.cpp; sourceTree = "<group>"; };
-		512A5C8D22D449D000830C16 /* ValidParentheses.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ValidParentheses.hpp; sourceTree = "<group>"; };
-		512A5C8F22D44EE000830C16 /* MinStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MinStack.cpp; sourceTree = "<group>"; };
-		512A5C9022D44EE000830C16 /* MinStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MinStack.hpp; sourceTree = "<group>"; };
-		512A5C9322D494A200830C16 /* Implement_Queue_using_Stacks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Implement_Queue_using_Stacks.cpp; sourceTree = "<group>"; };
-		512A5C9422D494A200830C16 /* Implement_Queue_using_Stacks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Implement_Queue_using_Stacks.hpp; sourceTree = "<group>"; };
-		512A5C9622D572A700830C16 /* Implement_Stack_using_Queues.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Implement_Stack_using_Queues.cpp; sourceTree = "<group>"; };
-		512A5C9922D572A700830C16 /* Implement_Stack_using_Queues.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Implement_Stack_using_Queues.hpp; sourceTree = "<group>"; };
-		512A5C9C22D59EBE00830C16 /* Sliding_Window_Maximum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sliding_Window_Maximum.cpp; sourceTree = "<group>"; };
-		512A5C9D22D59EBE00830C16 /* Sliding_Window_Maximum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Sliding_Window_Maximum.hpp; sourceTree = "<group>"; };
+		BD494F2922F67B5C004F7AA8 /* PruneDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PruneDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD494F2C22F67B5C004F7AA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BD494F3322F67BAC004F7AA8 /* N-Queens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "N-Queens.cpp"; sourceTree = "<group>"; };
+		BD494F3422F67BAC004F7AA8 /* N-Queens.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "N-Queens.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		512A5C7C22D440C200830C16 /* Frameworks */ = {
+		BD494F2622F67B5C004F7AA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,109 +41,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		512A5C7622D440C200830C16 = {
+		BD494F2022F67B5C004F7AA8 = {
 			isa = PBXGroup;
 			children = (
-				512A5C8122D440C200830C16 /* StackDemo */,
-				512A5C8022D440C200830C16 /* Products */,
+				BD494F2B22F67B5C004F7AA8 /* PruneDemo */,
+				BD494F2A22F67B5C004F7AA8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		512A5C8022D440C200830C16 /* Products */ = {
+		BD494F2A22F67B5C004F7AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				512A5C7F22D440C200830C16 /* StackDemo */,
+				BD494F2922F67B5C004F7AA8 /* PruneDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		512A5C8122D440C200830C16 /* StackDemo */ = {
+		BD494F2B22F67B5C004F7AA8 /* PruneDemo */ = {
 			isa = PBXGroup;
 			children = (
-				512A5C8222D440C200830C16 /* main.cpp */,
-				512A5C8F22D44EE000830C16 /* MinStack.cpp */,
-				512A5C9022D44EE000830C16 /* MinStack.hpp */,
-				512A5C8C22D449CF00830C16 /* ValidParentheses.cpp */,
-				512A5C8D22D449D000830C16 /* ValidParentheses.hpp */,
-				512A5C9322D494A200830C16 /* Implement_Queue_using_Stacks.cpp */,
-				512A5C9422D494A200830C16 /* Implement_Queue_using_Stacks.hpp */,
-				512A5C9622D572A700830C16 /* Implement_Stack_using_Queues.cpp */,
-				512A5C9922D572A700830C16 /* Implement_Stack_using_Queues.hpp */,
-				512A5C9C22D59EBE00830C16 /* Sliding_Window_Maximum.cpp */,
-				512A5C9D22D59EBE00830C16 /* Sliding_Window_Maximum.hpp */,
+				BD494F2C22F67B5C004F7AA8 /* main.cpp */,
+				BD494F3322F67BAC004F7AA8 /* N-Queens.cpp */,
+				BD494F3422F67BAC004F7AA8 /* N-Queens.hpp */,
 			);
-			path = StackDemo;
+			path = PruneDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		512A5C7E22D440C200830C16 /* StackDemo */ = {
+		BD494F2822F67B5C004F7AA8 /* PruneDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 512A5C8622D440C200830C16 /* Build configuration list for PBXNativeTarget "StackDemo" */;
+			buildConfigurationList = BD494F3022F67B5C004F7AA8 /* Build configuration list for PBXNativeTarget "PruneDemo" */;
 			buildPhases = (
-				512A5C7B22D440C200830C16 /* Sources */,
-				512A5C7C22D440C200830C16 /* Frameworks */,
-				512A5C7D22D440C200830C16 /* CopyFiles */,
+				BD494F2522F67B5C004F7AA8 /* Sources */,
+				BD494F2622F67B5C004F7AA8 /* Frameworks */,
+				BD494F2722F67B5C004F7AA8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StackDemo;
-			productName = StackDemo;
-			productReference = 512A5C7F22D440C200830C16 /* StackDemo */;
+			name = PruneDemo;
+			productName = PruneDemo;
+			productReference = BD494F2922F67B5C004F7AA8 /* PruneDemo */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		512A5C7722D440C200830C16 /* Project object */ = {
+		BD494F2122F67B5C004F7AA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = quanshi;
+				ORGANIZATIONNAME = "张枫林";
 				TargetAttributes = {
-					512A5C7E22D440C200830C16 = {
+					BD494F2822F67B5C004F7AA8 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 512A5C7A22D440C200830C16 /* Build configuration list for PBXProject "StackDemo" */;
+			buildConfigurationList = BD494F2422F67B5C004F7AA8 /* Build configuration list for PBXProject "PruneDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 512A5C7622D440C200830C16;
-			productRefGroup = 512A5C8022D440C200830C16 /* Products */;
+			mainGroup = BD494F2022F67B5C004F7AA8;
+			productRefGroup = BD494F2A22F67B5C004F7AA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				512A5C7E22D440C200830C16 /* StackDemo */,
+				BD494F2822F67B5C004F7AA8 /* PruneDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		512A5C7B22D440C200830C16 /* Sources */ = {
+		BD494F2522F67B5C004F7AA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512A5C9122D44EE000830C16 /* MinStack.cpp in Sources */,
-				512A5C9E22D59EBE00830C16 /* Sliding_Window_Maximum.cpp in Sources */,
-				512A5C8E22D449D000830C16 /* ValidParentheses.cpp in Sources */,
-				512A5C9522D494A200830C16 /* Implement_Queue_using_Stacks.cpp in Sources */,
-				512A5C8322D440C200830C16 /* main.cpp in Sources */,
-				512A5C9A22D572A800830C16 /* Implement_Stack_using_Queues.cpp in Sources */,
+				BD494F2D22F67B5C004F7AA8 /* main.cpp in Sources */,
+				BD494F3522F67BAC004F7AA8 /* N-Queens.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		512A5C8422D440C200830C16 /* Debug */ = {
+		BD494F2E22F67B5C004F7AA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		512A5C8522D440C200830C16 /* Release */ = {
+		BD494F2F22F67B5C004F7AA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +242,7 @@
 			};
 			name = Release;
 		};
-		512A5C8722D440C200830C16 /* Debug */ = {
+		BD494F3122F67B5C004F7AA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -274,7 +250,7 @@
 			};
 			name = Debug;
 		};
-		512A5C8822D440C200830C16 /* Release */ = {
+		BD494F3222F67B5C004F7AA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -285,25 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		512A5C7A22D440C200830C16 /* Build configuration list for PBXProject "StackDemo" */ = {
+		BD494F2422F67B5C004F7AA8 /* Build configuration list for PBXProject "PruneDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				512A5C8422D440C200830C16 /* Debug */,
-				512A5C8522D440C200830C16 /* Release */,
+				BD494F2E22F67B5C004F7AA8 /* Debug */,
+				BD494F2F22F67B5C004F7AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		512A5C8622D440C200830C16 /* Build configuration list for PBXNativeTarget "StackDemo" */ = {
+		BD494F3022F67B5C004F7AA8 /* Build configuration list for PBXNativeTarget "PruneDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				512A5C8722D440C200830C16 /* Debug */,
-				512A5C8822D440C200830C16 /* Release */,
+				BD494F3122F67B5C004F7AA8 /* Debug */,
+				BD494F3222F67B5C004F7AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 512A5C7722D440C200830C16 /* Project object */;
+	rootObject = BD494F2122F67B5C004F7AA8 /* Project object */;
 }

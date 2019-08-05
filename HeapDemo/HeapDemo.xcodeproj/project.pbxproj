@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		510F695022F8161F00060CD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510F694F22F8161F00060CD9 /* main.cpp */; };
-		510F695822F8163500060CD9 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510F695622F8163500060CD9 /* Heap.cpp */; };
+		BD494F3E22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F3C22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp */; };
+		BD494F4122F85DBA004F7AA8 /* TestHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F3F22F85DBA004F7AA8 /* TestHeap.cpp */; };
+		BD494F4422F8661A004F7AA8 /* Last Stone Weight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F4222F8661A004F7AA8 /* Last Stone Weight.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +28,12 @@
 /* Begin PBXFileReference section */
 		510F694C22F8161F00060CD9 /* HeapDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HeapDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		510F694F22F8161F00060CD9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		510F695622F8163500060CD9 /* Heap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Heap.cpp; sourceTree = "<group>"; };
-		510F695722F8163500060CD9 /* Heap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Heap.hpp; sourceTree = "<group>"; };
+		BD494F3C22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kth_Largest_Element_in_a_Stream.cpp; sourceTree = "<group>"; };
+		BD494F3D22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Kth_Largest_Element_in_a_Stream.hpp; sourceTree = "<group>"; };
+		BD494F3F22F85DBA004F7AA8 /* TestHeap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestHeap.cpp; sourceTree = "<group>"; };
+		BD494F4022F85DBA004F7AA8 /* TestHeap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestHeap.hpp; sourceTree = "<group>"; };
+		BD494F4222F8661A004F7AA8 /* Last Stone Weight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Last Stone Weight.cpp"; sourceTree = "<group>"; };
+		BD494F4322F8661A004F7AA8 /* Last Stone Weight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Last Stone Weight.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +66,23 @@
 		510F694E22F8161F00060CD9 /* HeapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BD494F3822F85B75004F7AA8 /* code */,
 				510F694F22F8161F00060CD9 /* main.cpp */,
-				510F695622F8163500060CD9 /* Heap.cpp */,
-				510F695722F8163500060CD9 /* Heap.hpp */,
+				BD494F3F22F85DBA004F7AA8 /* TestHeap.cpp */,
+				BD494F4022F85DBA004F7AA8 /* TestHeap.hpp */,
 			);
 			path = HeapDemo;
+			sourceTree = "<group>";
+		};
+		BD494F3822F85B75004F7AA8 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				BD494F3C22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp */,
+				BD494F3D22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.hpp */,
+				BD494F4222F8661A004F7AA8 /* Last Stone Weight.cpp */,
+				BD494F4322F8661A004F7AA8 /* Last Stone Weight.hpp */,
+			);
+			path = code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				510F695022F8161F00060CD9 /* main.cpp in Sources */,
-				510F695822F8163500060CD9 /* Heap.cpp in Sources */,
+				BD494F3E22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp in Sources */,
+				BD494F4122F85DBA004F7AA8 /* TestHeap.cpp in Sources */,
+				BD494F4422F8661A004F7AA8 /* Last Stone Weight.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
