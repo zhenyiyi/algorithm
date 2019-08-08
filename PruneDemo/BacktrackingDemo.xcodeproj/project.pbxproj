@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BD494F2922F67B5C004F7AA8 /* PruneDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PruneDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD494F2922F67B5C004F7AA8 /* backtrackingDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = backtrackingDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD494F2C22F67B5C004F7AA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BD494F3322F67BAC004F7AA8 /* N-Queens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "N-Queens.cpp"; sourceTree = "<group>"; };
 		BD494F3422F67BAC004F7AA8 /* N-Queens.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "N-Queens.hpp"; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		BD494F2A22F67B5C004F7AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD494F2922F67B5C004F7AA8 /* PruneDemo */,
+				BD494F2922F67B5C004F7AA8 /* backtrackingDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD494F2822F67B5C004F7AA8 /* PruneDemo */ = {
+		BD494F2822F67B5C004F7AA8 /* backtrackingDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD494F3022F67B5C004F7AA8 /* Build configuration list for PBXNativeTarget "PruneDemo" */;
+			buildConfigurationList = BD494F3022F67B5C004F7AA8 /* Build configuration list for PBXNativeTarget "backtrackingDemo" */;
 			buildPhases = (
 				BD494F2522F67B5C004F7AA8 /* Sources */,
 				BD494F2622F67B5C004F7AA8 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = PruneDemo;
+			name = backtrackingDemo;
 			productName = PruneDemo;
-			productReference = BD494F2922F67B5C004F7AA8 /* PruneDemo */;
+			productReference = BD494F2922F67B5C004F7AA8 /* backtrackingDemo */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD494F2422F67B5C004F7AA8 /* Build configuration list for PBXProject "PruneDemo" */;
+			buildConfigurationList = BD494F2422F67B5C004F7AA8 /* Build configuration list for PBXProject "BacktrackingDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD494F2822F67B5C004F7AA8 /* PruneDemo */,
+				BD494F2822F67B5C004F7AA8 /* backtrackingDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD494F2422F67B5C004F7AA8 /* Build configuration list for PBXProject "PruneDemo" */ = {
+		BD494F2422F67B5C004F7AA8 /* Build configuration list for PBXProject "BacktrackingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD494F2E22F67B5C004F7AA8 /* Debug */,
@@ -270,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD494F3022F67B5C004F7AA8 /* Build configuration list for PBXNativeTarget "PruneDemo" */ = {
+		BD494F3022F67B5C004F7AA8 /* Build configuration list for PBXNativeTarget "backtrackingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD494F3122F67B5C004F7AA8 /* Debug */,

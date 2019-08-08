@@ -40,6 +40,8 @@
 		510F69A622FAC5AC00060CD9 /* Last Stone Weight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Last Stone Weight.hpp"; sourceTree = "<group>"; };
 		510F69A822FAC80700060CD9 /* Two City Scheduling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Two City Scheduling.cpp"; sourceTree = "<group>"; };
 		510F69A922FAC80700060CD9 /* Two City Scheduling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Two City Scheduling.hpp"; sourceTree = "<group>"; };
+		510F69AB22FBA7BB00060CD9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		510F69AC22FBB08F00060CD9 /* Huffman Tree.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Huffman Tree.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 			children = (
 				510F699B22FAA5BB00060CD9 /* src */,
 				510F699422FAA58800060CD9 /* main.cpp */,
+				510F69AB22FBA7BB00060CD9 /* README.md */,
+				510F69AC22FBB08F00060CD9 /* Huffman Tree.md */,
 			);
 			path = GreedyDemo;
 			sourceTree = "<group>";
