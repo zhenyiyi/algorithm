@@ -36,7 +36,7 @@
 using namespace std;
 
 /*
- * 运用到剪枝思想
+ * 运用到剪枝思想。回溯算法
  */
 class Solution_22 {
 public:

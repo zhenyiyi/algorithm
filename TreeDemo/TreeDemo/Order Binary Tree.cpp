@@ -28,5 +28,8 @@ void testOrderBinaryTree(){
     root3->left = left2;
     root3->right = right2;
 
-    
+//    OrderBinaryTreeV2().preOrder(root);
+    OrderBinaryTreeV2().postorder(root);
 }
+
+

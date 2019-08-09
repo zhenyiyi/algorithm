@@ -33,7 +33,9 @@ int main(int argc, const char * argv[]) {
     
 //    testMinDepth();
     
-    testGenerateParenthesis();
+//    testGenerateParenthesis();
+    
+    testOrderBinaryTree();
     
     return 0;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510F69AF22FC073400060CD9 /* Letter Combinations of a Phone Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510F69AD22FC073400060CD9 /* Letter Combinations of a Phone Number.cpp */; };
 		BD494F2D22F67B5C004F7AA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F2C22F67B5C004F7AA8 /* main.cpp */; };
 		BD494F3522F67BAC004F7AA8 /* N-Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F3322F67BAC004F7AA8 /* N-Queens.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		510F69AD22FC073400060CD9 /* Letter Combinations of a Phone Number.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Letter Combinations of a Phone Number.cpp"; sourceTree = "<group>"; };
+		510F69AE22FC073400060CD9 /* Letter Combinations of a Phone Number.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Letter Combinations of a Phone Number.hpp"; sourceTree = "<group>"; };
 		BD494F2922F67B5C004F7AA8 /* backtrackingDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = backtrackingDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD494F2C22F67B5C004F7AA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BD494F3322F67BAC004F7AA8 /* N-Queens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "N-Queens.cpp"; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				BD494F2C22F67B5C004F7AA8 /* main.cpp */,
+				510F69AD22FC073400060CD9 /* Letter Combinations of a Phone Number.cpp */,
+				510F69AE22FC073400060CD9 /* Letter Combinations of a Phone Number.hpp */,
 				BD494F3322F67BAC004F7AA8 /* N-Queens.cpp */,
 				BD494F3422F67BAC004F7AA8 /* N-Queens.hpp */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510F69AF22FC073400060CD9 /* Letter Combinations of a Phone Number.cpp in Sources */,
 				BD494F2D22F67B5C004F7AA8 /* main.cpp in Sources */,
 				BD494F3522F67BAC004F7AA8 /* N-Queens.cpp in Sources */,
 			);

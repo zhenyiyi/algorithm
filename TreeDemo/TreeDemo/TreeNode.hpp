@@ -15,6 +15,7 @@ struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
+    int visit;// 访问次数
     TreeNode(int x):val(x), left(nullptr),right(nullptr){};
 };
 #endif /* TreeNode_hpp */

@@ -53,7 +53,7 @@ int rkSearch(string main, string pattern){
         return -1;
     }
     
-    vector<int> arr = {static_cast<int>(pow(26, 0)),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0)};
+    vector<size_t> arr = {static_cast<int>(pow(26, 0)),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0),pow(26, 0)};
     
     return -1;
 }
