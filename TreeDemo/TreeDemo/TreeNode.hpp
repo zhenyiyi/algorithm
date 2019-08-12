@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 
+typedef struct TreeNode *Position;
+
 struct TreeNode {
     int val;
     TreeNode *left;

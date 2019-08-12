@@ -165,3 +165,190 @@ N'=N*[(1-x)^2+x^2]       其中x的取值区间是(0,1)
 -  深度为k的二叉树有最大结点总数为: 2 的k次方 -1，k >= 1。 
 -  对任何非空二叉树 T，若n0表示叶结点的个数、n2是 度为2的非叶结点个数，那么两者满足关系n0 = n2 +1。 (证明：)
 
+
+
+### 二叉树遍历
+
+```c
+void InorderTraversal( BinTree BT )
+{
+    if( BT ) {
+        InorderTraversal( BT->Left );
+        /* 此处假设对BT结点的访问就是打印数据 */
+        printf("%d ", BT->Data); /* 假设数据为整型 */
+        InorderTraversal( BT->Right );
+    }
+}
+ 
+void PreorderTraversal( BinTree BT )
+{
+    if( BT ) {
+        printf("%d ", BT->Data );
+        PreorderTraversal( BT->Left );
+        PreorderTraversal( BT->Right );
+    }
+}
+ 
+void PostorderTraversal( BinTree BT )
+{
+    if( BT ) {
+        PostorderTraversal( BT->Left );
+        PostorderTraversal( BT->Right );
+        printf("%d ", BT->Data);
+    }
+}
+ 
+void LevelorderTraversal ( BinTree BT )
+{ 
+    Queue Q; 
+    BinTree T;
+ 
+    if ( !BT ) return; /* 若是空树则直接返回 */
+     
+    Q = CreatQueue(); /* 创建空队列Q */
+    AddQ( Q, BT );
+    while ( !IsEmpty(Q) ) {
+        T = DeleteQ( Q );
+        printf("%d ", T->Data); /* 访问取出队列的结点 */
+        if ( T->Left )   AddQ( Q, T->Left );
+        if ( T->Right )  AddQ( Q, T->Right );
+    }
+}
+```
+
+
+
+### 二叉树遍历 非递归
+
+- 中序遍历非递归遍历算法 
+
+- 遇到一个结点，就把它压栈，并去遍历它的左子树; 
+-  当左子树遍历结束后，从栈顶弹出这个结点并访问它; 
+-  然后按其右指针再去中序遍历该结点的右子树。 
+
+```c
+void InOrderTraversal( BinTree BT )
+{  
+  BinTree T=BT;
+  Stack S = CreatStack( MaxSize ); /*创建并初始化堆栈S*/ 
+  while( T || !IsEmpty(S) ){
+    while(T){ /*一直向左并将沿途结点压入堆栈*/ Push(S,T);
+      T = T->Left; 
+    }
+    if(!IsEmpty(S)){
+      T = Pop(S); /*结点弹出堆栈*/
+      printf(“%5d”, T->Data); /*(中序访问)打印结点*/ 
+      T = T->Right; /*转向右子树*/
+    }
+  }
+}
+```
+
+### 层序遍历 
+
+二叉树遍历的核心问题:  **二维结构的线性化**
+
+- 从结点访问其左、右儿子结点
+- 访问左儿子后，右儿子结点怎么办? 
+- 需要一个存储结构保存暂时不访问的结点 
+- 存储结构:堆栈、队列 
+
+**队列实现** : 遍历从根结点开始，首先将根结点入队，然后开始执行循环
+
+结点出队、访问该结点、其左右儿子入队
+
+```c
+void LevelOrderTraversal ( BinTree BT )
+{
+  Queue Q; BinTree T;
+  if ( !BT ) return; /* 若是空树则直接返回 */
+  Q = CreatQueue( MaxSize ); /*创建并初始化队列Q*/ AddQ( Q, BT );
+  while ( !IsEmptyQ( Q ) ) {
+    T = DeleteQ( Q );
+    printf(“%d\n”, T->Data); /*访问取出队列的结点*/ 
+    if ( T->Left ) AddQ( Q, T->Left );
+    if ( T->Right ) AddQ( Q, T->Right );
+  } 
+}
+```
+
+
+
+例子：
+
+1. 输出二叉树中的叶子结点
+
+   - 在二叉树的遍历算法中增加检测结点的 “左右子树是否都为空”
+
+2. 求树的高度 (后续遍历)
+
+   ```c
+   int PostOrderGetHeight( BinTree BT ) { 
+     int HL, HR, MaxH;
+     if( BT ) {
+   		HL = PostOrderGetHeight(BT->Left); /*求左子树的深度*/ 
+       HR = PostOrderGetHeight(BT->Right); /*求右子树的深度*/
+       MaxH = (HL > HR)? HL : HR; /*取左右子树较大的深度*/
+       return ( MaxH + 1 ); /*返回树的深度*/
+     }
+     else return 0; /* 空树深度为0 */
+   }
+   ```
+
+   
+
+3. 二元运算表达式树及其遍历
+
+4. 由两种遍历序列确定二叉树
+
+   先序和中序遍历序列来确定一棵二叉树  
+
+   - 根据先序遍历序列第一个结点确定根结点;
+   - 根据根结点在中序遍历序列中分割出左右两个子序列 
+   - 对左子树和右子树分别递归使用相同的方法继续分解。 
+
+5. 给定两棵树T1和T2。如果T1可以通过若干次左右孩子互换就变成T2，则我们称两棵树是“同构”的。
+   现给定两棵树，请你判断它们是否是同构的？
+
+   
+
+## 4.1 二叉搜索树
+
+查找问题:
+
+- 静态查找与动态查找
+- 针对动态查找，数据如何组织?
+
+#### 什么是二叉搜索树 
+
+二叉搜索树(BST，Binary Search Tree)， 也称二叉排序树或二叉查找树 
+
+```
+ 二叉搜索树:一棵二叉树，可以为空;如果不为空，满足以下性质:
+```
+
+1. 非空左子树的所有键值小于其根结点的键值。 
+2. 非空右子树的所有键值大于其根结点的键值。
+3.  左、右子树都是二叉搜索树。 
+
+#### 二叉搜索树操作的特别函数:
+
+- Position Find( ElementType X, BinTree BST ):从二叉搜索树BST 中查找元素X，返回其所在结点的地址;
+- Position FindMin( BinTree BST ):从二叉搜索树BST中查找并返回 最小元素所在结点的地址; 
+
+- Position FindMax( BinTree BST ) :从二叉搜索树BST中查找并返回 最大元素所在结点的地址。 
+- BinTree Insert( ElementType X, BinTree BST ) 
+- BinTree Delete( ElementType X, BinTree BST ) 
+
+
+
+
+
+##4.2 什么是平衡二叉树 
+
+平衡因子(Balance Factor，简称BF):  BF(T) = hL-hR， 其中hL和hR分别为T的左、右子树的高度。 
+
+平衡二叉树(Balanced Binary Tree)(AVL树) 空树，或者 
+
+任一结点左、右子树高度差的绝对值不超过1，即|BF(T) |≤ 1 
+
