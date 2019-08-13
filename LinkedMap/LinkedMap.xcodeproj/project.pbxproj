@@ -19,6 +19,7 @@
 		512A5C6A22CF585600830C16 /* DeleteNode_in_a_LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C6822CF585600830C16 /* DeleteNode_in_a_LinkedList.cpp */; };
 		512A5C6D22CF5C1D00830C16 /* DesignLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512A5C6B22CF5C1D00830C16 /* DesignLinkedList.cpp */; };
 		BD494EB322D4CE44004F7AA8 /* Implement_Stack_using_Queues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494EB122D4CE43004F7AA8 /* Implement_Stack_using_Queues.cpp */; };
+		BD494F622302D926004F7AA8 /* Reverse Linked List II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F602302D926004F7AA8 /* Reverse Linked List II.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,8 @@
 		512A5C6C22CF5C1D00830C16 /* DesignLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DesignLinkedList.hpp; sourceTree = "<group>"; };
 		BD494EB122D4CE43004F7AA8 /* Implement_Stack_using_Queues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Implement_Stack_using_Queues.cpp; sourceTree = "<group>"; };
 		BD494EB222D4CE43004F7AA8 /* Implement_Stack_using_Queues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Implement_Stack_using_Queues.hpp; sourceTree = "<group>"; };
+		BD494F602302D926004F7AA8 /* Reverse Linked List II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Reverse Linked List II.cpp"; sourceTree = "<group>"; };
+		BD494F612302D926004F7AA8 /* Reverse Linked List II.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Reverse Linked List II.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +94,11 @@
 		512A5C4622CDD7D300830C16 /* LinkedMap */ = {
 			isa = PBXGroup;
 			children = (
+				BD494F5F2302D8C3004F7AA8 /* Reverse反转链表 */,
 				512A5C4722CDD7D300830C16 /* main.cpp */,
 				512A5C5422CDE12600830C16 /* LinkedList.h */,
 				512A5C4E22CDD7FE00830C16 /* AddTwoNumbers.cpp */,
 				512A5C4F22CDD7FE00830C16 /* AddTwoNumbers.hpp */,
-				512A5C5122CDE10300830C16 /* ReverseLinkedList.cpp */,
-				512A5C5222CDE10300830C16 /* ReverseLinkedList.hpp */,
 				512A5C5522CDF01600830C16 /* MiddleOfTheLinkedList.cpp */,
 				512A5C5622CDF01600830C16 /* MiddleOfTheLinkedList.hpp */,
 				512A5C5822CEDF6100830C16 /* MergeTwoSortedLists.cpp */,
@@ -117,6 +119,17 @@
 				BD494EB222D4CE43004F7AA8 /* Implement_Stack_using_Queues.hpp */,
 			);
 			path = LinkedMap;
+			sourceTree = "<group>";
+		};
+		BD494F5F2302D8C3004F7AA8 /* Reverse反转链表 */ = {
+			isa = PBXGroup;
+			children = (
+				512A5C5122CDE10300830C16 /* ReverseLinkedList.cpp */,
+				512A5C5222CDE10300830C16 /* ReverseLinkedList.hpp */,
+				BD494F602302D926004F7AA8 /* Reverse Linked List II.cpp */,
+				BD494F612302D926004F7AA8 /* Reverse Linked List II.hpp */,
+			);
+			path = "Reverse反转链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +195,7 @@
 				512A5C6A22CF585600830C16 /* DeleteNode_in_a_LinkedList.cpp in Sources */,
 				512A5C6422CF154800830C16 /* RemoveLinkedListElements.cpp in Sources */,
 				512A5C5322CDE10300830C16 /* ReverseLinkedList.cpp in Sources */,
+				BD494F622302D926004F7AA8 /* Reverse Linked List II.cpp in Sources */,
 				512A5C4822CDD7D300830C16 /* main.cpp in Sources */,
 				512A5C5722CDF01600830C16 /* MiddleOfTheLinkedList.cpp in Sources */,
 				512A5C6D22CF5C1D00830C16 /* DesignLinkedList.cpp in Sources */,
