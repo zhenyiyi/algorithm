@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		510F695022F8161F00060CD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510F694F22F8161F00060CD9 /* main.cpp */; };
+		51C978842303971B003C46DC /* HuffmanTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51C978822303971B003C46DC /* HuffmanTree.cpp */; };
 		BD494F3E22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F3C22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp */; };
 		BD494F4122F85DBA004F7AA8 /* TestHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F3F22F85DBA004F7AA8 /* TestHeap.cpp */; };
 		BD494F4422F8661A004F7AA8 /* Last Stone Weight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD494F4222F8661A004F7AA8 /* Last Stone Weight.cpp */; };
@@ -28,6 +29,9 @@
 /* Begin PBXFileReference section */
 		510F694C22F8161F00060CD9 /* HeapDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HeapDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		510F694F22F8161F00060CD9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		51C978822303971B003C46DC /* HuffmanTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HuffmanTree.cpp; sourceTree = "<group>"; };
+		51C978832303971B003C46DC /* HuffmanTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HuffmanTree.hpp; sourceTree = "<group>"; };
+		51C978852303A23D003C46DC /* min_heap.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = min_heap.py; sourceTree = "<group>"; };
 		BD494F3C22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kth_Largest_Element_in_a_Stream.cpp; sourceTree = "<group>"; };
 		BD494F3D22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Kth_Largest_Element_in_a_Stream.hpp; sourceTree = "<group>"; };
 		BD494F3F22F85DBA004F7AA8 /* TestHeap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestHeap.cpp; sourceTree = "<group>"; };
@@ -66,12 +70,23 @@
 		510F694E22F8161F00060CD9 /* HeapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				51C978812303970E003C46DC /* HuffmanTree */,
 				BD494F3822F85B75004F7AA8 /* code */,
 				510F694F22F8161F00060CD9 /* main.cpp */,
 				BD494F3F22F85DBA004F7AA8 /* TestHeap.cpp */,
 				BD494F4022F85DBA004F7AA8 /* TestHeap.hpp */,
 			);
 			path = HeapDemo;
+			sourceTree = "<group>";
+		};
+		51C978812303970E003C46DC /* HuffmanTree */ = {
+			isa = PBXGroup;
+			children = (
+				51C978822303971B003C46DC /* HuffmanTree.cpp */,
+				51C978832303971B003C46DC /* HuffmanTree.hpp */,
+				51C978852303A23D003C46DC /* min_heap.py */,
+			);
+			path = HuffmanTree;
 			sourceTree = "<group>";
 		};
 		BD494F3822F85B75004F7AA8 /* code */ = {
@@ -145,6 +160,7 @@
 				BD494F3E22F85BC1004F7AA8 /* Kth_Largest_Element_in_a_Stream.cpp in Sources */,
 				BD494F4122F85DBA004F7AA8 /* TestHeap.cpp in Sources */,
 				BD494F4422F8661A004F7AA8 /* Last Stone Weight.cpp in Sources */,
+				51C978842303971B003C46DC /* HuffmanTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

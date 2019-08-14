@@ -374,3 +374,202 @@ void LevelOrderTraversal ( BinTree BT )
 
 
 
+是否可以采用二叉树存储结构? 
+
+- 二叉搜索树? 
+-  如果采用二叉树结构，应更关注插入还是删除? 
+  - 树结点顺序怎么安排? 
+  - 树结构怎样? 
+
+#### 优先队列的完全二叉树表示
+
+堆的两个特性 
+
+- 结构性:用数组表示的完全二叉树; 
+- 有序性:任一结点的关键字是其子树所有结点的最大值(或最小值) 
+  -  “最大堆(MaxHeap)”,也称“大顶堆”:最大值 
+  -  “最小堆(MinHeap)”,也称“小顶堆” :最小值 
+
+> 从根结点到任意结点路径上结点序列的有序性!
+
+#### 堆的抽象数据类型描述 
+
+**类型名称**:最大堆(MaxHeap) 
+
+**数据对象集**:完全二叉树，每个结点的元素值不小于其子结点的元素值 
+
+**操作集**: 最大堆H ∈ MaxHeap，元素item  ∈ ElementType，
+
+**主要操作有**: 
+
+- MaxHeap Create( int MaxSize ):创建一个空的最大堆。 
+- Boolean IsFull( MaxHeap H ):判断最大堆H是否已满。
+- Insert( MaxHeap H, ElementType item ):将元素item插入最大堆H。 
+- Boolean IsEmpty( MaxHeap H ):判断最大堆H是否为空。
+- ElementType DeleteMax( MaxHeap H ):返回H中最大元素(高优先级)。 
+
+#### 最大堆的操作
+
+```c
+typedef struct HeapStruct *MaxHeap; 
+struct HeapStruct {
+	ElementType *Elements; /* 存储堆元素的数组 */ 
+	int Size; /* 堆的当前元素个数 */
+	int Capacity; /* 堆的最大容量 
+};
+
+MaxHeap Create( int MaxSize ){
+  /* 创建容量为MaxSize的空的最大堆 */
+  MaxHeap H = malloc( sizeof( struct HeapStruct ) ); 
+  H->Elements = malloc( (MaxSize+1)*sizeof(ElementType));
+  H->Size = 0;
+  H->Capacity = MaxSize;
+  H->Elements[0] = MaxData;
+	/* 定义“哨兵”为大于堆中所有可能元素的值，便于以后更快操作 */ 
+  return H;
+}
+
+```
+
+#### 将新增结点插入到从其父结点到根结点的有序序列中
+
+```c
+void Insert( MaxHeap H, ElementType item )
+{ 
+  /* 将元素item 插入最大堆H，其中H->Elements[0]已经定义为哨兵 */
+  int i;
+  if ( IsFull(H) ) {
+    printf("最大堆已满");
+    return; 
+  }
+  i = ++H->Size; /* i指向插入后堆中的最后一个元素的位置 */ 
+  for ( ; H->Elements[i/2] < item && i>0; i/=2 )
+  	H->Elements[i] = H->Elements[i/2]; /* 向下过滤结点 */ 
+  H->Elements[i] = item; /* 将item 插入 */
+}
+```
+
+> T (N) = O ( log N )
+
+#### 最大堆的删除
+
+取出根结点(最大值)元素，同时删除堆的一个结点。
+
+```c
+ElementType DeleteMax( MaxHeap H )
+{ 
+  /* 从最大堆H中取出键值为最大的元素，并删除一个结点 */ 
+  int Parent, Child;
+  ElementType MaxItem, temp;
+  if ( IsEmpty(H) ) {
+    printf("最大堆已为空");
+    return; 
+  }
+  MaxItem = H->Elements[1]; /* 取出根结点最大值 */
+  /* 用最大堆中最后一个元素从根结点开始向上过滤下层结点 */ 
+  temp = H->Elements[H->Size--];
+  // 有子节点会继续循环
+  for( Parent=1; Parent*2<=H->Size; Parent=Child ) {
+          Child = Parent * 2;
+    			// 有左右子节点
+          if((Child!= H->Size) &&(H->Elements[Child] < H->Elements[Child+1]))
+            	Child++; /* Child指向左右子结点的较大者 */
+  				if( temp >= H->Elements[Child] ) break;
+    			else /* 移动temp元素到下一层 */
+  				H->Elements[Parent] = H->Elements[Child];
+  }
+  H->Elements[Parent] = temp; return MaxItem;
+ }
+```
+
+> T (N) = O ( log N )
+
+#### 最大堆的建立
+
+建立最大堆:   将已经存在的N个元素按最大堆的要求存放在 一个一维数组中 
+
+- 通过插入操作，将N个元素一个个相继插入到一个初 始为空的堆中去，其时间代价最大为O(N logN)。 
+- 在线性时间复杂度下建立最大堆。 线性时间复杂度T(n)=O(n)
+  - 将N个元素按输入顺序存入，先满足完全二叉树的结构特性 
+  - 调整各结点位置，以满足最大堆的有序特性。 
+
+#### 思考题
+
+1. 减堆中某个元素值的操作如何实现？
+
+   和删除最大元素一致，用最后一个元素替换，然后堆化
+
+## 5.2 哈夫曼树与哈夫曼编码
+
+什么是哈夫曼树(Huffman Tree)?
+
+> 如何根据结点不同的查找频率构造更有效的搜索树?
+
+#### 哈夫曼树的定义 
+
+ 带权路径长度(WPL): 设二叉树有n个叶子结点，每个叶子结点带 有权值 wk，从根结点到每个叶子结点的长度为 lk，则每个叶子结 n 点的带权路径长度之和就是: WPL
+
+> 最优二叉树或哈夫曼树: WPL最小的二叉树
+
+哈夫曼树的构造 
+
+- 每次把权值最小的两棵二叉树合并 (使用最小堆实现)
+
+```c
+typedef struct TreeNode *HuffmanTree;
+struct TreeNode{
+  int Weight;
+  HuffmanTree Left, Right; 
+}
+HuffmanTree Huffman( MinHeap H )
+{ 
+  /* 假设H->Size个权值已经存在H->Elements[]->Weight里*/
+  int i; HuffmanTree T;
+  BuildMinHeap(H); /*将H->Elements[]按权值调整为最小堆*/ 
+  for (i = 1; i < H->Size; i++) { /*做H->Size-1次合并*/
+  	T = malloc( sizeof( struct TreeNode) ); /*建立新结点*/
+    T->Left = DeleteMin(H); /*从最小堆中删除一个结点，作为新T的左子结点*/
+   	T->Right = DeleteMin(H); /*从最小堆中删除一个结点，作为新T的右子结点*/
+   	T->Weight = T->Left->Weight+T->Right->Weight; /*计算新权值*/
+  	Insert( H, T ); /*将新T插入最小堆*/
+  }
+  T = DeleteMin(H); // 拿到根节点 
+  return T;
+}
+```
+
+哈夫曼树的特点:
+
+- 没有度为1的结点;
+-  n个叶子结点的哈夫曼树共有2n-1个结点;
+- 哈夫曼树的任意非叶节点的左右子树交换后仍是哈夫曼树; 
+
+ 对同一组权值{w1 ,w2 , ...... , wn}，是否存在不同构的两 棵哈夫曼树呢? 
+
+对一组权值{ 1, 2 , 3, 3 }，不同构的两棵哈夫曼树: 
+
+#### 哈夫曼编码
+
+给定一段字符串，如何对字符进行编码，可以使得该字符串的编码 存储空间最少? 
+
+[例] 假设有一段文本，包含58个字符，并由以下7个字符构:a，e，i， s，t，空格(sp)，换行(nl);这7个字符出现的次数不同。如何对 这7个字符进行编码，使得总编码空间最少? 
+
+【分析】
+
+- 用等长ASCII编码:58 ×8 = 464位; 
+- 用等长3位编码:58 ×3 = 174位; 
+- 不等长编码:出现频率高的字符用的编码短些，出现频率低 的字符则可以编码长些? 
+
+#### 怎么进行不等长编码?
+
+如何避免二义性?
+
+- **前缀码**prefix code : 任何字符的编码都不是另一字符编码的前缀 
+- 可以无二义地解码 
+
+#### 二叉树用于编码 
+
+用二叉树进行编码: 
+
+- 左右分支:0、1 
+- 字符只在叶结点上 
